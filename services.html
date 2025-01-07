@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Swift Ship Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Service Card Hover Effects */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #D7D3BF; /* Light beige background for cards */
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section background consistency */
+        .section-bg {
+            background-color: #F5F3E5; /* Light beige background for sections */
+            padding: 2rem 0;
+        }
+
+        /* Section Heading Styling */
+        .section-heading {
+            color: #2C3E50; /* Dark text color for headings */
+        }
+        
+        /* Card title color consistency */
+        .card-title {
+            color: #2C3E50; /* Dark text for card titles */
+        }
+
+        .btn-primary {
+            background-color: #2C3E50; /* Button color */
+            border-color: #2C3E50;
+        }
+
+        .btn-primary:hover {
+            background-color: #34495E;
+            border-color: #34495E;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Swift Ship Express</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Special Offers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section class="container section-bg " >
+        <h2 class="text-center section-heading mb-4 py-5">Our Shipping Services</h2>
+        <p class="text-center mb-5">At Swift Ship Express, we offer a variety of shipping services tailored to meet your needs. Whether you require fast delivery for urgent shipments, or international solutions for global reach, we have you covered. Explore our services below and choose the one that fits your shipping requirements.</p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card service-card">
+                    <img src="https://picsum.photos/400/300?random=6" class="card-img-top" alt="Same Day Shipping">
+                    <div class="card-body">
+                        <h5 class="card-title">Same Day Shipping</h5>
+                        <p class="card-text">Need it fast? Our same-day shipping service ensures your packages are delivered on the same day within local regions. Ideal for urgent deliveries.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card">
+                    <img src="https://picsum.photos/400/300?random=7" class="card-img-top" alt="Economy Shipping">
+                    <div class="card-body">
+                        <h5 class="card-title">Economy Shipping</h5>
+                        <p class="card-text">Our cost-effective solution for non-urgent deliveries. Economy Shipping offers great value for less time-sensitive shipments.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card">
+                    <img src="https://picsum.photos/400/300?random=8" class="card-img-top" alt="Global Shipping">
+                    <div class="card-body">
+                        <h5 class="card-title">Global Shipping</h5>
+                        <p class="card-text">We offer worldwide shipping to over 200 countries, with secure and reliable delivery to help your business expand globally.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-bg">
+        <h2 class="text-center section-heading mb-4">Additional Services</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card service-card">
+                    <img src="https://picsum.photos/400/300?random=9" class="card-img-top" alt="Packaging Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Packaging Services</h5>
+                        <p class="card-text">Our packaging services ensure your items are protected during transit, providing safe, secure, and eco-friendly packaging solutions.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card">
+                    <img src="https://picsum.photos/400/300?random=10" class="card-img-top" alt="Tracking Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Real-Time Tracking</h5>
+                        <p class="card-text">Stay updated with real-time tracking of your shipments. Our system lets you track your packages from dispatch to delivery.</p>
+                        <a href="#" class="btn btn-primary">Track Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card">
+                    <img src="https://picsum.photos/400/300?random=11" class="card-img-top" alt="Insurance Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Shipping Insurance</h5>
+                        <p class="card-text">Protect your valuable shipments with our comprehensive insurance options, ensuring peace of mind throughout the shipping process.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Swift Ship Express. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

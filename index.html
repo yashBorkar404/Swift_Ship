@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Swift Ship Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color: #ffffff;
+        }
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .footer-lists{
+            padding-left: 0;
+            color:aliceblue;
+            height:200px;
+
+        }
+        .ftr-list{
+            color:azure;
+        }
+        /* .tracking-form {
+            
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+        } */
+
+            .form-overlay {
+            background-color: rgba(33, 37, 41, 0.8);
+            border-radius: 10px;
+            border: 2px solid #fff;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-80%);
+            z-index: 10;
+            width: 350px;
+        }
+        .card{
+            background-color : #D7D3BF;
+        }
+        .whycus{
+            background-color:#C1BAA1;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Swift Ship Express</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Check out our latest shipping offers!">Special Offers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+   
+
+
+    
+    <!-- Hero Section with Carousel -->
+    <!-- Hero Section with Carousel -->
+    <div id="heroCarousel" class="carousel slide mt-0" data-bs-ride="carousel">
+        <div class="form-overlay p-4 text-light">
+            <h4 class="mb-3 text-center text-light">Track Your Shipment</h4>
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="trackingId" class="form-label">Tracking ID</label>
+                    <input type="text" class="form-control bg-dark text-light" id="trackingId" required>
+                </div>
+                <div class="col-12">
+                    <label for="otp" class="form-label">OTP</label>
+                    <input type="text" class="form-control bg-dark text-light" id="otp" required>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100">Track</button>
+                </div>
+            </form>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://picsum.photos/1600/900?random=1');">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1 class="display-3 fw-bold">Exceptional Customer Service 24/7 Content:</h1>
+                        <p class="lead">Our dedicated customer support team is always ready to assist you, no matter the time of day. Whether you have questions about your shipment, need help with tracking, or need assistance with custom clearance, we are here for you. </p>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Get a Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://picsum.photos/1600/900?random=2');">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="display-3 fw-bold">Fast & Reliable Shipping Across the Globe Content</h1>
+                        <p class="lead">At [Your Business Name], we offer fast, reliable, and cost-effective shipping solutions to meet all your delivery needs. Whether you're sending packages locally or internationally, our seamless services ensure your goods reach their destination on time. Experience the convenience of real-time tracking, safe packaging, and swift delivery that gives you peace of mind.</p>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Our Network</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://picsum.photos/1600/900?random=3');">
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1 class="display-3 fw-bold">Affordable & Flexible Shipping Plans Content:</h1>
+                        <p class="lead">We understand that every business has unique shipping requirements. That’s why we offer a variety of flexible and affordable shipping plans tailored to your needs. From small personal parcels to bulk business deliveries, we ensure you get the best rates without compromising on service quality</p>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Track Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="container my-5 whycus rounded-5 py-4">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <p class="text-center">At [Your Business Name], we offer fast, reliable, and cost-effective shipping solutions for all your needs. Here's why our customers trust us:</p>
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <h5>Speed & Reliability</h5>
+                <p>We ensure timely deliveries, no matter where you need to ship your package.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Cost-Effective Shipping</h5>
+                <p>Choose the best plan for your budget with competitive pricing on all services.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Comprehensive Solutions</h5>
+                <p>From standard to express delivery, we have the right solution for you.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>24/7 Customer Support</h5>
+                <p>Our friendly support team is always here to help with any queries you have.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="#start-shipping" class="btn btn-primary">Start Shipping Now</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Our Shipping Solutions</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://picsum.photos/400/300?random=4" class="card-img-top" alt="Express Shipping">
+                    <div class="card-body">
+                        <h5 class="card-title">Real-Time Tracking Content:</h5>
+                        <p class="card-text">Stay informed with our real-time tracking system. Get live updates on your shipment’s location, estimated delivery time, and any potential delays, all from the comfort of your device. You’ll always know where your package is, from pickup to drop-off..</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 ">
+                <div class="card ">
+                    <img src="https://picsum.photos/400/300?random=5" class="card-img-top" alt="International Shipping">
+                    <div class="card-body">
+                        <h5 class="card-title">Safe & Secure Packaging Content:</h5>
+                        <p class="card-text">Protect your goods with our secure packaging services. Whether you’re shipping fragile items or high-value products, we use premium materials and expert techniques to ensure everything arrives in perfect condition, every time.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://picsum.photos/400/300?random=6" class="card-img-top" alt="Freight Services">
+                    <div class="card-body">
+                        <h5 class="card-title">International Shipping Expertise Content:</h5>
+                        <p class="card-text">Shipping internationally can be complex, but we make it easy. With years of experience navigating customs, taxes, and international regulations, we handle all the details for you. We’ll ensure your items reach their international destination without hassle.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://picsum.photos/400/300?random=4" class="card-img-top" alt="Express Shipping">
+                    <div class="card-body">
+                        <h5 class="card-title"> Eco-Friendly Shipping Solutions Content:</h5>
+                        <p class="card-text">We care about the environment and offer eco-friendly shipping options. From sustainable packaging to carbon-offset initiatives, we take steps to minimize our carbon footprint while delivering your packages efficiently.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://picsum.photos/400/300?random=5" class="card-img-top" alt="International Shipping">
+                    <div class="card-body">
+                        <h5 class="card-title">Flexible Delivery Options Content:</h5>
+                        <p class="card-text">With our flexible delivery options, you can choose a service that best fits your schedule. We offer home delivery, in-store pickup, and business-to-business services to accommodate your needs. Plus, our delivery windows are customizable to ensure maximum convenience.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://picsum.photos/400/300?random=6" class="card-img-top" alt="Freight Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Dedicated Business Solutions Content:
+                        </h5>
+                        <p class="card-text">For businesses, we provide tailored solutions to streamline your logistics. From bulk shipping discounts to personalized pickup schedules, we work with you to develop an efficient and cost-effective shipping strategy that helps your business grow.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Swift Ship Express. All rights reserved.</p>
+            <p class="fw-bold">Information Security Policy:
+                Swift Ship is committed to safeguarding the confidentiality, integrity and availability of all physical and electronic information assets of the organization.
+                We ensure that the regulatory, operational and contractual requirements are fulfilled.
+                Disclaimer
+                Operational metrics listed are as of August 04, 2023</p>
+            <div class="row text-start">
+                <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Services</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Express Parcel</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Part Truckload</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Warehousing</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Software Platform</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Data Intelligence</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Cross Border</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Solutions</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">D2C Brands</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">B2B Enterprises</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Personal Courier</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Partners</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Franchise Opportunities</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Delivery Partner</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Fleet Owner</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 d-flex flex-column h-50 p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Policies</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Terms and Conditions</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Privacy Policy</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Cookie Policy</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Fraud Disclaimer</a></li>
+                    </ul>
+                  </div>
+                  
+                      
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+</html>
+
