@@ -9,6 +9,10 @@
         body{
             background-color: #ffffff;
         }
+        .btn-primary {
+            background-color: #2C3E50; 
+            border-color: #2C3E50;
+        }
         .carousel-item {
             height: 100vh;
             min-height: 300px;
@@ -27,18 +31,25 @@
         .ftr-list{
             color:azure;
         }
-      
+        /* .tracking-form {
+            
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+        } */
 
             .form-overlay {
-            background-color: rgba(33, 37, 41, 0.8);
+            background-color: rgba(231, 226, 226, 0.8);
             border-radius: 10px;
             border: 2px solid #fff;
             position: absolute;
             left: 20px;
             top: 50%;
-            transform: translateY(-80%);
+            transform: translateY(-90%);
             z-index: 10;
-            width: 350px;
+            width: 600px;
         }
         .card{
             background-color : #D7D3BF;
@@ -83,21 +94,22 @@
 
 
     
-    <!-- Hero Section -->
+
+    <!-- Carousel -->
     <div id="heroCarousel" class="carousel slide mt-0" data-bs-ride="carousel">
-        <div class="form-overlay p-4 text-light">
-            <h4 class="mb-3 text-center text-light">Track Your Shipment</h4>
+        <div class="form-overlay p-4 text-dark">
+            <h4 class="mb-3 text-center text-dark">Track Your Shipment</h4>
             <form class="row g-3">
                 <div class="col-12">
                     <label for="trackingId" class="form-label">Tracking ID</label>
-                    <input type="text" class="form-control bg-dark text-light" id="trackingId" required>
+                    <input type="text" class="form-control bg-light text-dark" id="trackingId" required>
                 </div>
                 <div class="col-12">
                     <label for="otp" class="form-label">OTP</label>
-                    <input type="text" class="form-control bg-dark text-light" id="otp" required>
+                    <input type="text" class="form-control bg-light text-dark" id="otp" required>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary w-100">Track</button>
+                    <button type="submit" data-text="Tracking your Parcel!" class="btn btn-primary w-100">Track</button>
                 </div>
             </form>
         </div>
@@ -107,7 +119,7 @@
                     <div class="carousel-caption text-start">
                         <h1 class="display-3 fw-bold">Exceptional Customer Service 24/7 Content:</h1>
                         <p class="lead">Our dedicated customer support team is always ready to assist you, no matter the time of day. Whether you have questions about your shipment, need help with tracking, or need assistance with custom clearance, we are here for you. </p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Get a Quote</a>
+                        <a class="btn btn-primary btn-lg" href="#" role="button" data-text="Getting you a quote!Please Wait">Get a Quote</a>
                     </div>
                 </div>
             </div>
@@ -115,7 +127,7 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1 class="display-3 fw-bold">Fast & Reliable Shipping Across the Globe Content</h1>
-                        <p class="lead">At [Your Business Name], we offer fast, reliable, and cost-effective shipping solutions to meet all your delivery needs. Whether you're sending packages locally or internationally, our seamless services ensure your goods reach their destination on time. Experience the convenience of real-time tracking, safe packaging, and swift delivery that gives you peace of mind.</p>
+                        <p class="lead">At Swift_Ship, we offer fast, reliable, and cost-effective shipping solutions to meet all your delivery needs. Whether you're sending packages locally or internationally, our seamless services ensure your goods reach their destination on time. Experience the convenience of real-time tracking, safe packaging, and swift delivery that gives you peace of mind.</p>
                         <a class="btn btn-primary btn-lg" href="#" role="button">Our Network</a>
                     </div>
                 </div>
@@ -136,12 +148,12 @@
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden"></span>
         </button>
     </div>
     <section class="container my-5 whycus rounded-5 py-4">
         <h2 class="text-center mb-4">Why Choose Us?</h2>
-        <p class="text-center">At [Your Business Name], we offer fast, reliable, and cost-effective shipping solutions for all your needs. Here's why our customers trust us:</p>
+        <p class="text-center">At Swift_Ship, we offer fast, reliable, and cost-effective shipping solutions for all your needs. Here's why our customers trust us:</p>
         <div class="row text-center">
             <div class="col-md-3 mb-4">
                 <h5>Speed & Reliability</h5>
@@ -161,7 +173,7 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="#start-shipping" class="btn btn-primary">Start Shipping Now</a>
+            <a href="#start-shipping" class="btn btn-primary" data-text="Let's go Shipping!">Start Shipping Now</a>
         </div>
     </section>
 
@@ -171,7 +183,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://picsum.photos/400/300?random=4" class="card-img-top" alt="Express Shipping">
+                    <img src="https://picsum.photos/400/300?random=7" class="card-img-top" alt="Express Shipping">
                     <div class="card-body">
                         <h5 class="card-title">Real-Time Tracking Content:</h5>
                         <p class="card-text">Stay informed with our real-time tracking system. Get live updates on your shipment’s location, estimated delivery time, and any potential delays, all from the comfort of your device. You’ll always know where your package is, from pickup to drop-off..</p>
@@ -215,7 +227,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://picsum.photos/400/300?random=5" class="card-img-top" alt="International Shipping">
+                    <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="International Shipping">
                     <div class="card-body">
                         <h5 class="card-title">Flexible Delivery Options Content:</h5>
                         <p class="card-text">With our flexible delivery options, you can choose a service that best fits your schedule. We offer home delivery, in-store pickup, and business-to-business services to accommodate your needs. Plus, our delivery windows are customizable to ensure maximum convenience.</p>
@@ -225,7 +237,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="https://picsum.photos/400/300?random=6" class="card-img-top" alt="Freight Services">
+                    <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Freight Services">
                     <div class="card-body">
                         <h5 class="card-title">Dedicated Business Solutions Content:
                         </h5>
@@ -312,6 +324,12 @@
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl)
         })
+        document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+        alert(`${event.target.getAttribute('data-text')}`);
+    });
+});
+
     </script>
 </body>
 </html>
