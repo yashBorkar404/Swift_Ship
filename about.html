@@ -41,7 +41,7 @@
         </div>
     </nav>
 
-    <!-- Main-->
+    <!-- Main -->
     <main class="container my-5 pt-5 hd">
         <h1 class="text-center mb-5">About Us</h1>
         
@@ -77,14 +77,60 @@
                 <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" id="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" text-data="Message Submitted Succesfully!">Submit</button>
         </form>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-light py-4">
+    <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p>&copy; 2023 Course Name. All rights reserved.</p>
+            <p>&copy; 2023 Swift Ship Express. All rights reserved.</p>
+            <p class="fw-bold">Information Security Policy:
+                Swift Ship is committed to safeguarding the confidentiality, integrity and availability of all physical and electronic information assets of the organization.
+                We ensure that the regulatory, operational and contractual requirements are fulfilled.
+                Disclaimer
+                Operational metrics listed are as of August 04, 2023</p>
+            <div class="row text-start">
+                <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Services</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Express Parcel</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Part Truckload</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Warehousing</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Software Platform</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Data Intelligence</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Cross Border</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Solutions</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">D2C Brands</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">B2B Enterprises</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Personal Courier</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Partners</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Franchise Opportunities</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Delivery Partner</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Fleet Owner</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 d-flex flex-column h-50 p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Policies</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Terms and Conditions</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Privacy Policy</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Cookie Policy</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Fraud Disclaimer</a></li>
+                    </ul>
+                  </div>
+                  
+                      
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -94,6 +140,11 @@
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl)
         })
+        document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', (event) => {
+        alert(`${event.target.getAttribute('data-text')}`);
+    });
+});
     </script>
 </body>
 </html>
