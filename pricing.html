@@ -50,7 +50,7 @@
         </div>
     </header>
 
-    <!-- Main  -->
+    <!-- Main -->
     <main class="container my-5">
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
             <div class="col">
@@ -66,7 +66,7 @@
                             <li><i class="bi bi-check text-success"></i> 3-5 business days</li>
                             <li><i class="bi bi-check text-success"></i> Basic tracking</li>
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg  hd">Choose Basic</button>
+                        <button type="button" class="w-100 btn btn-lg  hd" data-text="Great! You've Choosen Basic pack">Choose Basic</button>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                             <li><i class="bi bi-check text-success"></i> 2-3 business days</li>
                             <li><i class="bi bi-check text-success"></i> Advanced tracking</li>
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg hd">Choose Standard</button>
+                        <button type="button" class="w-100 btn btn-lg hd" data-text="Great! You've Choosen Standard pack"></button>>Choose Standard</button>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                             <li><i class="bi bi-check text-success"></i> Real-time tracking</li>
                             <li><i class="bi bi-check text-success"></i> Insurance included</li>
                         </ul>
-                        <button type="button" class="w-100 btn btn-lg hd">Choose Premium</button>
+                        <button type="button" class="w-100 btn btn-lg hd" data-text="Great! You've Choosen the Premium pack"></button>>Choose Premium</button>
                     </div>
                 </div>
             </div>
@@ -174,9 +174,56 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-light py-4">
+    <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <p>&copy; 2023 Swift Ship Express. All rights reserved.</p>
+            <p class="fw-bold">Information Security Policy:
+                Swift Ship is committed to safeguarding the confidentiality, integrity and availability of all physical and electronic information assets of the organization.
+                We ensure that the regulatory, operational and contractual requirements are fulfilled.
+                Disclaimer
+                Operational metrics listed are as of August 04, 2023</p>
+            <div class="row text-start">
+                <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Services</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Express Parcel</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Part Truckload</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Warehousing</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Software Platform</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Data Intelligence</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Cross Border</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Solutions</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">D2C Brands</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">B2B Enterprises</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Personal Courier</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 d-flex flex-column h-50  p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Partners</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Franchise Opportunities</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Delivery Partner</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Fleet Owner</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 d-flex flex-column h-50 p-3" style="width: 250px;">
+                    <h3 class="fw-bold">Policies</h1>
+                    <ul class="footer-lists">
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Terms and Conditions</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Privacy Policy</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Cookie Policy</a></li>
+                      <li class="ftr-list"><a href="#" class="text-decoration-none text-white">Fraud Disclaimer</a></li>
+                    </ul>
+                  </div>
+                  
+                      
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -186,6 +233,8 @@
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl)
         })
+      
+
     </script>
 </body>
 </html>
